@@ -46,7 +46,7 @@ public class playerController : MonoBehaviour
             // Rotate the player smoothly toward the target rotation.
             transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, 10f * Time.deltaTime);
         }
-
+        // add a if else statement where if the attack action is called stop movement 
         transform.Translate(playerMovement * player_KnightStats.moveSpeed * Time.deltaTime, Space.World);
     }
 
